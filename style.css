@@ -1,0 +1,327 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.659);
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 50px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    /* background-color: black; */
+}
+
+#heading {
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 5;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.h1 {
+    /* border: 3px solid rgb(17, 255, 0); */
+    margin: auto;
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Merriweather";
+}
+
+.navbar {
+    /* border: 3px solid yellow; */
+    position: absolute;
+    top: 32px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    /* border: 1px solid white; */
+    list-style: none;
+    font-family: "Merriweather";
+    font-size: 18px;
+    margin: 13px 35px 13px 35px;
+}
+
+.navbar li a {
+    /* border: 2px solid red; */
+    color: white;
+    text-decoration: none;
+    padding: 2px 20px 2px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px rgb(255, 255, 255), 0px 0px 15px 2px rgb(255, 255, 255), 0px 0px 15px 3px rgb(255, 255, 255);
+}
+
+.navbar li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0px 0px 15px 3px rgb(255, 255, 255);
+}
+
+.navbar li a:active {
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+}
+
+.top {
+    background-color: black;
+    position: fixed;
+    top: 600px;
+    left: 1410px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "Merriweather";
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px rgb(255, 255, 255), 0px 0px 15px 2px rgb(255, 255, 255), 0px 0px 15px 3px rgb(255, 255, 255);
+}
+
+.top:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0px 0px 15px 3px rgb(255, 255, 255);
+}
+
+.top:active {
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+}
+
+#home {
+    /* border: 3px solid red; */
+    background-color: black;
+    position: absolute;
+    top: 110px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.img1 {
+    /* border: 2px solid greenyellow; */
+    float: right;
+    width: 900px;
+    height: 540px;
+}
+
+#home p {
+    /* border: 2px solid greenyellow; */
+    font-family: "Merriweather";
+    font-size: 33px;
+    width: 650px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+    position: relative;
+    top: 130px;
+    left: 30px;
+}
+
+#aboutus {
+    background-color: black;
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 680px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#aboutus h1 {
+    font-family: "Merriweather";
+    font-size: 50px;
+}
+
+#aboutus p {
+    border-top: 0px solid cyan;
+    border-top-left-radius: 100px;
+    border-bottom: 0px solid cyan;
+    border-bottom-right-radius: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 10px 30px 10px 30px;
+    margin: 0px 200px 35px 200px;
+    box-shadow: 0px 0px 25px 5px cyan;
+}
+
+#bikes {
+    /* border: 1px solid red; */
+    background-color: black;
+    position: absolute;
+    top: 1150px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#bikes h1 {
+    font-family: "Merriweather";
+    font-size: 50px;
+}
+
+.countainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 70px 150px;
+}
+
+.box {
+    /* border: 2px solid yellow; */
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    box-shadow: 0px 0px 8px 4px white;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.bikeslogo{
+    width: 200px;
+    height: 200px;
+}
+
+.box:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 20px 7px white;
+}
+
+#gear {
+    /* border: 1px solid red; */
+    background-color: black;
+    position: absolute;
+    top: 1845px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: 110px 300px 270px;
+    justify-content: center;
+}
+
+.gears {
+    /* border: 2px solid yellow; */
+    margin: 10px 20px 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px 3px white;
+    transition: all 1s ease 0s;
+}
+
+.g1:hover {
+    font-size: 30px;
+    transform: scale(1.11);
+}
+
+.head {
+    font-family: "Merriweather";
+    font-size: 35px;
+    height: 100px;
+    grid-column: 1/6 span;
+    box-shadow: 0px 0px 0px 0px white;
+}
+
+.helmets {
+    font-family: "Merriweather";
+    font-size: 20px;
+    grid-column: 1/3 span;
+    background: url(helmet.png) no-repeat center center/cover;
+}
+
+.jackets {
+    font-family: "Merriweather";
+    font-size: 20px;
+    grid-column: 4/6 span;
+    background: url(jackets.jpg) no-repeat center center/cover;
+}
+
+.boots {
+    font-family: "Merriweather";
+    font-size: 20px;
+    grid-column: 1/2 span;
+    background: url(boots.jpeg) no-repeat center center/cover;
+}
+
+.accessories {
+    font-family: "Merriweather";
+    font-size: 20px;
+    grid-column: 3/2 span;
+    background: url(accessories.png) no-repeat center center/cover;
+}
+
+.parts {
+    font-family: "Merriweather";
+    font-size: 20px;
+    grid-column: 5/6 span;
+    background: url(parts.jpg) no-repeat center center/cover;
+}
+
+#reviews {
+    /* border: 3px solid red; */
+    background-color: black;
+    position: absolute;
+    top: 2540px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#reviews h1 {
+    font-family: "Merriweather";
+    font-size: 50px;
+}
+
+#contact {
+    /* border: 3px solid black; */
+    background-color: rgba(0, 0, 0, 0.606);
+    position: absolute;
+    top: 3230px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h1 {
+    font-family: "Merriweather";
+    font-size: 40px;
+    text-align: center;
+}
+
+.customer {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,128 @@
+::-webkit-scrollbar{
+    width: 7px;
+}
+.navbar li {
+    font-size: 15px;
+    margin: 13px 20px 13px 20px;
+}
+
+#home {
+    top: 100px;
+}
+
+.img1 {
+    width: 650px;
+    height: 450px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+#aboutus {
+    top: 500px;
+    height: 60%;
+}
+
+#aboutus h1 {
+    font-size: 30px;
+}
+
+#aboutus p {
+    /* border: 2px solid greenyellow; */
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+    padding: 10px 30px 10px 30px;
+    margin: 5px 100px 5px 100px;
+    box-shadow: 0px 0px 20px 3px cyan;
+}
+
+#bikes {
+    top: 900px;
+}
+
+#bikes h1 {
+    font-size: 30px;
+}
+
+.countainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 50px 40px;
+}
+
+.box {
+    /* border: 2px solid yellow; */
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 8px 3px white;
+}
+.bikeslogo{
+    width: 150px;
+    height: 150px;
+}
+
+.box:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 0px 17px 5px white;
+}
+
+#gear {
+    top: 1400px;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: 100px 220px 200px;
+}
+
+.g1:hover {
+    font-size: 20px;
+    transform: scale(1.10);
+}
+
+.head {
+    box-shadow: 0px 0px 0px 0px white;
+    height: 60px;
+    font-size: 20px;
+}
+
+.helmets {
+    font-size: 15px;
+}
+
+.jackets {
+    font-size: 15px;
+}
+
+.boots {
+    font-size: 15px;
+}
+
+.accessories {
+    font-size: 15px;
+}
+
+.parts {
+    font-size: 15px;
+}
+
+#reviews {
+    top: 1935px;
+    height: 70%;
+}
+
+#reviews h1 {
+    font-size: 30px;
+}
+
+#contact {
+    top: 2430px;
+}
+
+#contact h1 {
+    font-size: 30px;
+}
+
+.customer {
+    font-size: 13px;
+}
