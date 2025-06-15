@@ -29,38 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const reviewPopup = document.getElementById("reviewPopup");
-    const openReviewBtn = document.getElementById("openReviewPopup");
-    const closeReviewBtn = document.getElementById("closeReviewPopup");
+    const reviewLink = document.querySelector('.navbar a[href="#reviews"]');
+    const popup = document.getElementById("reviewPopup");
+    const closeBtn = document.getElementById("closeReviewPopup");
 
-    openReviewBtn.addEventListener("click", () => {
-        reviewPopup.style.display = "block";
+    reviewLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        popup.style.display = "block";
     });
 
-    closeReviewBtn.addEventListener("click", () => {
-        reviewPopup.style.display = "none";
+    closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
     });
 
     window.addEventListener("click", (e) => {
-        if (e.target === reviewPopup) {
-            reviewPopup.style.display = "none";
+        if (e.target === popup) {
+            popup.style.display = "none";
         }
     });
-
-    document.getElementById("reviewForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const username = document.getElementById("username").value;
-        const review = document.getElementById("reviewText").value;
-        const image = document.getElementById("reviewImage").files[0];
-
-        console.log("Name:", username);
-        console.log("Review:", review);
-        console.log("Image file:", image);
-
-        alert("Thanks for your review!");
-
-        this.reset();
-        reviewPopup.style.display = "none";
-    });
 });
+
+

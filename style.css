@@ -656,120 +656,25 @@ body {
 
 
 
+#reviewForm input,
+#reviewForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
 
-#reviews button {
-  padding: 10px 20px;
-  background-color: #000000;
+#reviewForm button {
+  background-color: #28a745;
+  color: white;
   border: none;
-  font-size: 16px;
+  padding: 10px 16px;
+  cursor: pointer;
   border-radius: 5px;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  padding: 5px 20px 5px 20px;
-  border-radius: 50px;
-  box-shadow: 0px 0px 15px 2px rgb(255, 255, 255);
-}
-
-#reviews button:hover {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-}
-
-/* Overlay Background */
-#reviewPopup {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
-  /* Dark semi-transparent overlay */
-  backdrop-filter: blur(2px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Popup Box */
-#reviewPopup .popup-content {
-  background: #1e1e1e;
-  color: #f0f0f0;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow:
-    0 0 10px rgba(255, 255, 255, 0.2),
-    0 0 30px rgba(255, 255, 255, 0.1);
   width: 100%;
-  max-width: 450px;
-  position: relative;
-  animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Close Button */
-#reviewPopup .close-btn {
-  position: absolute;
-  top: 12px;
-  right: 18px;
-  font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+#reviewForm button:hover {
+  background-color: #1e7e34;
 }
 
-#reviewPopup .close-btn:hover {
-  transform: scale(1.2);
-}
-
-/* Form Inputs */
-#reviewPopup input,
-#reviewPopup textarea {
-  width: 100%;
-  padding: 10px 12px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
-  background: #2a2a2a;
-  color: #fff;
-  font-size: 16px;
-}
-
-#reviewPopup input[type="file"] {
-  padding: 5px;
-  background: #1e1e1e;
-  color: #fff;
-}
-
-/* Submit Button */
-#reviewPopup button[type="submit"] {
-  background: #55ff00;
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  margin-top: 10px;
-  font-size: 16px;
-  /* font-weight: bold; */
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0s;
-}
-
-#reviewPopup button[type="submit"]:hover {
-  background: #397c12;
-}
-
-/* Smooth fade animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
